@@ -1,0 +1,3 @@
+<eu-master *ngIf="(authService.LoggedIn | async)"></eu-master>
+<eu-login *ngIf="!(authService.LoggedIn | async)"></eu-login>
+<p-toast position="bottom-center"></p-toast>
